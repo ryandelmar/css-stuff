@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style>
+      #countUp {
+        width: 200px;
+        height: 200px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png");
+        
+      }
+    </style>
+    <script>
+    var i = 0;
+    function runCounter() {
+      i++;
+      document.getElementById('theCounter').innerHTML = i;
+    }
+    </script>
+  </head>
+  <body>
+    <div id="countUp" onmousemove="runCounter()">
+    <h1 id="theCounter"></h1>
+    </div>
+  </body>
+</html>
